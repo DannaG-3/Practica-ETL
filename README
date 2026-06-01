@@ -27,3 +27,5 @@ Preparación inicial:
         Desde pgAdmin o consola, crear la base de datos: CREATE DATABASE super_store;
     2-Conectarse a la base de datos 
         Los archivos SQL deben ejecutarse estando conectado a esa base de datos.
+
+3- 

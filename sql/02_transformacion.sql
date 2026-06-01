@@ -1,3 +1,4 @@
 -- Etapa T: Transformación
 -- Limpia, convierte y carga datos desde staging hacia analitica
-
+-- Por ejemplo, podríamos convertir fechas a un formato estándar, calcular métricas adicionales, etc.
+--

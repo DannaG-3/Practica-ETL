@@ -33,13 +33,9 @@ CREATE TABLE staging.orders (
     order_year TEXT
 );
 
--- Importar datos desde el archivo CSV
-    -- Reemplazar C:/RUTA_DEL_REPOSITORIO por la ruta local donde se clonó el proyecto.
-    -- El servidor PostgreSQL debe tener acceso a esta ubicación.
-
-COPY staging.orders 
-FROM 'C:/RUTA_DEL_REPOSITORIO/datos/SuperStoreOrders.csv' 
-WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
+-- Importar datos usando el cliente psql (\copy)
+-- NOTA: Debe ir en una sola línea, con diagonales normales (/) y SIN punto y coma al final.
+\copy staging.orders FROM 'datos/SuperStoreOrders.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8')
 
 -- Verificar que los datos se hayan importado correctamente
 SELECT COUNT(*) FROM staging.orders; -- Esperamos 51290 filas
