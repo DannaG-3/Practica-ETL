@@ -21,6 +21,7 @@ Estructura del repositorio:
     │   └── (pendiente)
     │
     └── README.md
+<<<<<<< HEAD
 
 Preparación inicial:
     1-Antes de ejecutar los archivos SQL, se debe crear manualmente la base de datos en PostgreSQL.
@@ -29,3 +30,5 @@ Preparación inicial:
         Los archivos SQL deben ejecutarse estando conectado a esa base de datos.
 
 3- 
+=======
+>>>>>>> d8ded083bc8014973c5783f920673214d5d4a779

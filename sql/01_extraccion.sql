@@ -1,6 +1,10 @@
 -- Etapa E: Extracción
--- Base de datos esperada: super_store
--- Antes de ejecutar este archivo, conectarse a la base de datos super_store.
+
+--Crear base de datos
+CREATE DATABASE super_store;
+
+-- Conectar a la base de datos
+\c super_store;
 
 -- Crear esquemas
 CREATE SCHEMA IF NOT EXISTS staging;
@@ -33,9 +37,16 @@ CREATE TABLE staging.orders (
     order_year TEXT
 );
 
+<<<<<<< HEAD
 -- Importar datos usando el cliente psql (\copy)
 -- NOTA: Debe ir en una sola línea, con diagonales normales (/) y SIN punto y coma al final.
 \copy staging.orders FROM 'datos/SuperStoreOrders.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8')
+=======
+-- Importar datos desde el archivo CSV
+\copy staging.orders 
+FROM 'datos/SuperStoreOrders.csv' 
+WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
+>>>>>>> d8ded083bc8014973c5783f920673214d5d4a779
 
 -- Verificar que los datos se hayan importado correctamente
 SELECT COUNT(*) FROM staging.orders; -- Esperamos 51290 filas
