@@ -4,4 +4,26 @@ Profesor: Ing. Guillermo Quiñones Villareal
 Equipo: N°9 - Danna Geraldine González Gaviño y Brayan Paul Pelayo Ascencio
 
 
+El proyecto utiliza PostgreSQL para realizar las tres etapas principales del proceso ETL.
 
+Estructura del repositorio:
+    practica_etl/
+    │
+    ├── datos/
+    │   └── SuperStoreOrders.csv
+    │
+    ├── sql/
+    │   ├── 01_extraccion.sql
+    │   ├── 02_transformacion.sql
+    │   └── 03_validacion.sql
+    │
+    ├── docs/
+    │   └── (pendiente)
+    │
+    └── README.md
+
+Preparación inicial:
+    1-Antes de ejecutar los archivos SQL, se debe crear manualmente la base de datos en PostgreSQL.
+        Desde pgAdmin o consola, crear la base de datos: CREATE DATABASE super_store;
+    2-Conectarse a la base de datos 
+        Los archivos SQL deben ejecutarse estando conectado a esa base de datos.
