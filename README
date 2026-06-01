@@ -21,9 +21,3 @@ Estructura del repositorio:
     │   └── (pendiente)
     │
     └── README.md
-
-Preparación inicial:
-    1-Antes de ejecutar los archivos SQL, se debe crear manualmente la base de datos en PostgreSQL.
-        Desde pgAdmin o consola, crear la base de datos: CREATE DATABASE super_store;
-    2-Conectarse a la base de datos 
-        Los archivos SQL deben ejecutarse estando conectado a esa base de datos.
