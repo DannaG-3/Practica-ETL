@@ -1,6 +1,10 @@
 -- Etapa E: Extracción
--- Base de datos esperada: super_store
--- Antes de ejecutar este archivo, conectarse a la base de datos super_store.
+
+--Crear base de datos
+CREATE DATABASE super_store;
+
+-- Conectar a la base de datos
+\c super_store;
 
 -- Crear esquemas
 CREATE SCHEMA IF NOT EXISTS staging;
@@ -34,11 +38,8 @@ CREATE TABLE staging.orders (
 );
 
 -- Importar datos desde el archivo CSV
-    -- Reemplazar C:/RUTA_DEL_REPOSITORIO por la ruta local donde se clonó el proyecto.
-    -- El servidor PostgreSQL debe tener acceso a esta ubicación.
-
-COPY staging.orders 
-FROM 'C:/RUTA_DEL_REPOSITORIO/datos/SuperStoreOrders.csv' 
+\copy staging.orders 
+FROM 'C:/datos/SuperStoreOrders.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- Verificar que los datos se hayan importado correctamente
