@@ -39,7 +39,7 @@ CREATE TABLE staging.orders (
 
 -- Importar datos desde el archivo CSV
 \copy staging.orders 
-FROM 'C:/datos/SuperStoreOrders.csv' 
+FROM 'datos/SuperStoreOrders.csv' 
 WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- Verificar que los datos se hayan importado correctamente
