@@ -1,34 +1,47 @@
-Materia: ANÁLISIS DE DATOS
-Actividad: PRÁCTICA 1 - PROCESO ETL
-Profesor: Ing. Guillermo Quiñones Villareal
-Equipo: N°9 - Danna Geraldine González Gaviño y Brayan Paul Pelayo Ascencio
+# Práctica 1: Proceso ETL
 
+## 📋 Información Académica
 
-El proyecto utiliza PostgreSQL para realizar las tres etapas principales del proceso ETL.
+| Campo | Descripción |
+|-------|-------------|
+| **Materia** | ANÁLISIS DE DATOS |
+| **Actividad** | PRÁCTICA 1 - PROCESO ETL |
+| **Profesor** | Ing. Guillermo Quiñones Villareal |
+| **Equipo** | N°9 - Danna Geraldine González Gaviño y Brayan Paul Pelayo Ascencio |
 
-Estructura del repositorio:
-    practica_etl/
-    │
-    ├── datos/
-    │   └── SuperStoreOrders.csv
-    │
-    ├── sql/
-    │   ├── 01_extraccion.sql
-    │   ├── 02_transformacion.sql
-    │   └── 03_validacion.sql
-    │
-    ├── docs/
-    │   └── (pendiente)
-    │
-    └── README.md
-<<<<<<< HEAD
+---
 
-Preparación inicial:
-    1-Antes de ejecutar los archivos SQL, se debe crear manualmente la base de datos en PostgreSQL.
-        Desde pgAdmin o consola, crear la base de datos: CREATE DATABASE super_store;
-    2-Conectarse a la base de datos 
-        Los archivos SQL deben ejecutarse estando conectado a esa base de datos.
+## 📊 Descripción del Proyecto
 
-3- 
-=======
->>>>>>> d8ded083bc8014973c5783f920673214d5d4a779
+El proyecto utiliza **PostgreSQL** para realizar las tres etapas principales del proceso **ETL** (Extracción, Transformación y Validación).
+
+---
+
+## 📁 Estructura del Repositorio
+
+```
+practica_etl/
+│
+├── datos/
+│   └── SuperStoreOrders.csv
+│
+├── sql/
+│   ├── 01_extraccion.sql
+│   ├── 02_transformacion.sql
+│   └── 03_validacion.sql
+│
+├── docs/
+│   └── (pendiente)
+│
+└── README.md
+```
+
+---
+
+## 🚀 Preparación Inicial
+
+### Paso 1: Crear la base de datos
+Ejecutar **01_extraccion.sql** para crear y llenar la base de datos.
+
+### Paso 2: Conectarse a la base de datos
+Los archivos SQL deben ejecutarse en orden secuencial, inicando por el anterior **01_extraccion.sql**, siguiendo con **02_transformacion.sql** y finalmente **03_validacion.sql**.
