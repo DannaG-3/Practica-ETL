@@ -38,9 +38,7 @@ CREATE TABLE staging.orders (
 );
 
 -- Importar datos desde el archivo CSV
-\copy staging.orders 
-FROM 'datos/SuperStoreOrders.csv' 
-WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
+\copy staging.orders FROM 'datos/SuperStoreOrders.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- Verificar que los datos se hayan importado correctamente
 SELECT COUNT(*) FROM staging.orders; -- Esperamos 51290 filas
