@@ -113,3 +113,10 @@ WHERE order_id IS NOT NULL
     AND shipping_cost IS NOT NULL
     AND order_priority IS NOT NULL
     AND order_year IS NOT NULL;
+
+-- Validar la carga de datos
+SELECT
+    (SELECT COUNT(*) FROM staging.orders) AS total_staging,
+    (SELECT COUNT(*) FROM transformation.orders) AS total_transformation,
+    (SELECT COUNT(*) FROM analytics.orders) AS total_analytics;
+-- Esperamos 51290 registros en cada tabla, lo que indica que se han cargado correctamente los datos sin pérdida.
