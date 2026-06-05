@@ -44,4 +44,3 @@ WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 
 -- Verificar que los datos se hayan importado correctamente
 SELECT COUNT(*) FROM staging.orders; -- Esperamos 51290 filas
-SELECT * FROM staging.orders LIMIT 5;
