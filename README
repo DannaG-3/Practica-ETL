@@ -44,4 +44,7 @@ practica_etl/
 Ejecutar **01_extraccion.sql** para crear y llenar la base de datos.
 
 ### Paso 2: Conectarse a la base de datos
-Los archivos SQL deben ejecutarse en orden secuencial, inicando por el anterior **01_extraccion.sql**, siguiendo con **02_transformacion.sql** y finalmente **03_validacion.sql**.
+Los archivos SQL deben ejecutarse en orden secuencial, inicando por el anterior **01_extraccion.sql**, siguiendo con **02_transformacion.sql**.
+
+### Paso 3: Ejecutar las validaciónes
+Ejecutar preferentemente dentro de una Query Tool el contenido del archivo **03_validacion.sql**, debido a que se busca validar individualmente cada parametro.
