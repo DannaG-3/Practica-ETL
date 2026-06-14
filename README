@@ -19,6 +19,10 @@ ESTRUCTURA DEL PROYECTO
     | |-- 02_transformacion.sql
     | |-- 03_validacion.sql
     |
+    |-- docs/
+    | |-- consultas.pdf
+    | |-- reporte.pdf
+    |
     |-- README.txt
 
 
