@@ -1,8 +1,3 @@
-Materia: ANÁLISIS DE DATOS
-Actividad: PRÁCTICA 1 - PROCESO ETL
-Profesor: Ing. Guillermo Quiñones Villareal
-Equipo: N°9 - Danna Geraldine González Gaviño y Brayan Paul Pelayo Ascencio
-
 DESCRIPCIÓN
 
 Este proyecto implementa un proceso ETL utilizando PostgreSQL sobre el archivo SuperStoreOrders.csv.
@@ -20,7 +15,6 @@ ESTRUCTURA DEL PROYECTO
     | |-- 03_validacion.sql
     |
     |-- docs/
-    | |-- consultas.pdf
     | |-- reporte.pdf
     |
     |-- README.txt
